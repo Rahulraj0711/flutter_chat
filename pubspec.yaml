@@ -1,0 +1,50 @@
+name: flutter_chat
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons:
+  animated_text_kit:
+  firebase_auth:
+  firebase_core:
+  cloud_firestore:
+  modal_progress_hud:
+  google_sign_in:
+  flutter_auth_buttons:
+  shared_preferences:
+  image_picker:
+  circular_profile_avatar:
+  splashscreen:
+  intl:
+  cached_network_image:
+  extended_image:
+  photo_view:
+  clipboard:
+  firebase_storage:
+  fluttertoast:
+  file_picker:
+  video_player:
+  http:
+  path_provider:
+  dio:
+  chewie:
+  video_thumbnail:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/

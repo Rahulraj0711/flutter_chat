@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="flutter_chat">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>flutter_chat</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebase/8.3.3/firebase-storage.js"></script>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAUt80yGyLzV9L3kG8IKTcEryVGBs0XsfU",
+      authDomain: "chat-application-790f2.firebaseapp.com",
+      databaseURL: "https://chat-application-790f2.firebaseio.com",
+      projectId: "chat-application-790f2",
+      storageBucket: "chat-application-790f2.appspot.com",
+      messagingSenderId: "633405342454",
+      appId: "1:633405342454:web:0a3862d3efc5097c49a2d7",
+      measurementId: "G-N95DCFST6W"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
